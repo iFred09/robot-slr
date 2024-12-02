@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<item key="replaceBarOpen" value="false"/>
+	<list key="searchhistory">
+		<item value="FactoryPersis"/>
+		<item value="moveto"/>
+		<item value="behave"/>
+		<item value="run"/>
+		<item value="computeMotion()"/>
+		<item value="moveTo"/>
+		<item value="move"/>
+	</list>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="&#x09;public SimulatorController(final Factory factoryModel,"/>
+		<list key="findhistory">
+			<item value="&#x09;public SimulatorController(final Factory factoryModel,"/>
+			<item value="if (getFactory().hasMobileComponentAt(shape, this)) {"/>
+		</list>
+	</section>
+</section>
