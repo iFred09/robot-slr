@@ -5,6 +5,7 @@ import java.net.Socket;
 
 import fr.tp.inf112.projects.canvas.model.Canvas;
 import fr.tp.inf112.projects.canvas.view.FileCanvasChooser;
+import fr.tp.inf112.projects.robotsim.model.Factory;
 import fr.tp.inf112.projects.robotsim.model.FactoryPersistenceManager;
 
 public class RequestProcessor implements Runnable {
@@ -30,19 +31,17 @@ public class RequestProcessor implements Runnable {
             // Analyzing object
             
             if (readObject instanceof String) {
-            	String canvasId = (String)readObject;
-            	Canvas canvasObject = persistenceManager.read(canvasId);
+            	Canvas canvasObject = persistenceManager.read((String)readObject);
             	output.writeObject(canvasObject);
-            	System.out.println("Read and sent canvas with ID: " + canvasId);
+            	System.out.println("Read and sent canvas with ID: " + (String)readObject);
             }
-            else if (readObject instanceof Canvas) {
-            	Canvas factory = (Canvas)readObject;
-            	persistenceManager.persist(factory);
-            	output.writeObject("Factory persisted successfully");
-            	System.out.println("Persisted factory with ID: " + factory.getId());
+            else if (readObject instanceof Factory) {
+                persistenceManager.persist((Factory) readObject);
+                output.writeObject("Factory persisted successfully");
+                System.out.println("Persisted factory with ID: " + ((Factory)readObject).getId());
             }
             else {
-            	output.writeObject("invalid object");
+            	output.writeObject("Invalid object");
             	System.out.println("Received invalid object type");
             }
         } catch (Exception ex) {

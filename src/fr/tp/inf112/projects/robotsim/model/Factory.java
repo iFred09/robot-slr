@@ -3,12 +3,14 @@ package fr.tp.inf112.projects.robotsim.model;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.logging.Logger;
 
 import fr.tp.inf112.projects.canvas.controller.Observable;
 import fr.tp.inf112.projects.canvas.controller.Observer;
 import fr.tp.inf112.projects.canvas.model.Canvas;
 import fr.tp.inf112.projects.canvas.model.Figure;
 import fr.tp.inf112.projects.canvas.model.Style;
+import fr.tp.inf112.projects.robotsim.model.motion.Motion;
 import fr.tp.inf112.projects.robotsim.model.shapes.PositionedShape;
 import fr.tp.inf112.projects.robotsim.model.shapes.RectangularShape;
 
@@ -24,6 +26,8 @@ public class Factory extends Component implements Canvas, Observable {
 	private transient List<Observer> observers;
 
 	private transient boolean simulationStarted;
+	
+	private static final Logger LOGGER = Logger.getLogger(Factory.class.getName());
 	
 	public Factory(final int width,
 				   final int height,
@@ -160,5 +164,16 @@ public class Factory extends Component implements Canvas, Observable {
 		}
 		
 		return false;
+	}
+	
+	public synchronized int moveComponent(Component c, Motion motion) {
+		for (final Component component : getComponents()) {
+			if (component != c && component.isMobile() && component.getPosition().equals(motion.getTargetPosition())) {
+				LOGGER.info("Collision detected between " + c + " and " + component);
+				return 0;
+			}
+		}
+		LOGGER.fine("Moving " + c + " to " + motion.getTargetPosition());
+		return 1;
 	}
 }
