@@ -1,10 +1,15 @@
 package fr.tp.inf112.projects.robotsim.model;
 
+import fr.tp.inf112.projects.robotsim.model.shapes.BasicPolygonShape;
 import fr.tp.inf112.projects.robotsim.model.shapes.PositionedShape;
 
 public class Conveyor extends Component {
 	
 	private static final long serialVersionUID = 3686048824190456547L;
+	
+	public Conveyor() {
+		this(null, new BasicPolygonShape(), null);
+	}
 
 	public Conveyor(final Factory factory,
 					final PositionedShape shape,

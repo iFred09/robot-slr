@@ -1,0 +1,27 @@
+package fr.tp.inf112.projects.robotsim.app;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.logging.Logger;
+
+import fr.tp.inf112.projects.canvas.model.Canvas;
+import fr.tp.inf112.projects.canvas.model.CanvasPersistenceManager;
+import fr.tp.inf112.projects.robotsim.model.Factory;
+
+
+public class RemoteSimulatorController extends SimulatorController {
+	private static final Logger LOGGER = Logger.getLogger(RemoteSimulatorController.class.getName());
+	
+	Thread update;
+	Factory test;
+
+	public RemoteSimulatorController(CanvasPersistenceManager persistenceManager) {
+		super(persistenceManager);
+	}
+
+	public RemoteSimulatorController(Factory factoryModel, CanvasPersistenceManager persistenceManager) {
+		super(factoryModel, persistenceManager);
+		test = factoryModel;
+	}
+
+}

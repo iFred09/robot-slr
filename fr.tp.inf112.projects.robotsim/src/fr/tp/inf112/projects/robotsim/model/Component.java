@@ -18,6 +18,10 @@ public abstract class Component implements Figure, Runnable, Serializable {
 	private final PositionedShape shape;
 	
 	private final String name;
+	
+	protected Component() {
+		this(null,null,null);
+	}
 
 	protected Component(final Factory factory,
 						final PositionedShape shape,

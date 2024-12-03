@@ -23,7 +23,6 @@ public class RemoteFactoryPersistenceManager implements CanvasPersistenceManager
             ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
             ObjectInputStream in = new ObjectInputStream(socket.getInputStream())
         ) {
-            out.writeObject("LOAD");
             out.writeObject(canvasId);
             
             Object response = in.readObject();

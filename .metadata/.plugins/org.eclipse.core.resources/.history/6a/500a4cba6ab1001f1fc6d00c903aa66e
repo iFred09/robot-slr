@@ -1,0 +1,87 @@
+package com.example.demo;
+
+import fr.tp.inf112.projects.robotsim.app.SimulatorController;
+import fr.tp.inf112.projects.robotsim.model.Factory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Optional;
+
+@RestController
+@RequestMapping("/api/simulation")
+public class SimulationRestController {
+
+    private static final Logger logger = LoggerFactory.getLogger(SimulationRestController.class);
+
+    private final SimulatorController simulatorController;
+
+    public SimulationRestController(CanvasPersistenceManager persistenceManager) {
+        this.simulatorController = new SimulatorController(persistenceManager);
+    }
+
+    /**
+     * Start simulating a factory model by its ID.
+     *
+     * @param factoryId the ID of the factory model to simulate
+     * @return true if successful, false otherwise
+     */
+    @PostMapping("/start/{factoryId}")
+    public boolean startSimulation(@PathVariable String factoryId) {
+        logger.info("Starting simulation for factory ID: {}", factoryId);
+        try {
+            Factory factory = (Factory) simulatorController.getPersistenceManager().loadCanvas(factoryId);
+            if (factory != null) {
+                simulatorController.setCanvas(factory);
+                simulatorController.startAnimation();
+                logger.info("Simulation started successfully for factory ID: {}", factoryId);
+                return true;
+            } else {
+                logger.warn("Factory model not found for ID: {}", factoryId);
+                return false;
+            }
+        } catch (Exception e) {
+            logger.error("Error starting simulation for factory ID: {}", factoryId, e);
+            return false;
+        }
+    }
+
+    /**
+     * Retrieve a currently simulated factory model by its ID.
+     *
+     * @param factoryId the ID of the factory model to retrieve
+     * @return the factory model if found, null otherwise
+     */
+    @GetMapping("/{factoryId}")
+    public Factory getSimulation(@PathVariable String factoryId) {
+        logger.info("Retrieving simulation for factory ID: {}", factoryId);
+        Factory factory = (Factory) simulatorController.getCanvas();
+        if (factory != null && factory.getId().equals(factoryId)) {
+            logger.info("Simulation retrieved successfully for factory ID: {}", factoryId);
+            return factory;
+        } else {
+            logger.warn("No simulation found for factory ID: {}", factoryId);
+            return null;
+        }
+    }
+
+    /**
+     * Stop simulating a factory model by its ID.
+     *
+     * @param factoryId the ID of the factory model to stop simulation
+     * @return true if successful, false otherwise
+     */
+    @DeleteMapping("/stop/{factoryId}")
+    public boolean stopSimulation(@PathVariable String factoryId) {
+        logger.info("Stopping simulation for factory ID: {}", factoryId);
+        Factory factory = (Factory) simulatorController.getCanvas();
+        if (factory != null && factory.getId().equals(factoryId)) {
+            simulatorController.stopAnimation();
+            logger.info("Simulation stopped successfully for factory ID: {}", factoryId);
+            return true;
+        } else {
+            logger.warn("No active simulation found for factory ID: {}", factoryId);
+            return false;
+        }
+    }
+}

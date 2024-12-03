@@ -3,7 +3,12 @@ package fr.tp.inf112.projects.robotsim.model;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Random;
 import java.util.logging.Logger;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import fr.tp.inf112.projects.canvas.controller.Observable;
 import fr.tp.inf112.projects.canvas.controller.Observer;
@@ -21,13 +26,21 @@ public class Factory extends Component implements Canvas, Observable {
 	private static final ComponentStyle DEFAULT = new ComponentStyle(5.0f);
 
 
-    private final List<Component> components;
+	@JsonInclude
+	private boolean simulationStarted;
+
+	@JsonManagedReference("Factory")
+	private List<Component> components;
+	private final Random random = new Random();
+
 
 	private transient List<Observer> observers;
-
-	private transient boolean simulationStarted;
 	
 	private static final Logger LOGGER = Logger.getLogger(Factory.class.getName());
+	
+	public Factory() {
+		this(0,0,null);
+	}
 	
 	public Factory(final int width,
 				   final int height,
@@ -39,7 +52,8 @@ public class Factory extends Component implements Canvas, Observable {
 		simulationStarted = false;
 	}
 	
-	protected List<Observer> getObservers() {
+	@JsonIgnore
+	public List<Observer> getObservers() {
 		if (observers == null) {
 			observers = new ArrayList<>();
 		}
@@ -89,6 +103,7 @@ public class Factory extends Component implements Canvas, Observable {
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
+	@JsonIgnore
 	public Collection<Figure> getFigures() {
 		return (Collection) components;
 	}
@@ -98,6 +113,7 @@ public class Factory extends Component implements Canvas, Observable {
 		return super.toString() + " components=" + components + "]";
 	}
 	
+	@Override
 	public boolean isSimulationStarted() {
 		return simulationStarted;
 	}
@@ -140,6 +156,7 @@ public class Factory extends Component implements Canvas, Observable {
 		return behaved;
 	}
 	
+	@JsonIgnore
 	@Override
 	public Style getStyle() {
 		return DEFAULT;
@@ -167,13 +184,26 @@ public class Factory extends Component implements Canvas, Observable {
 	}
 	
 	public synchronized int moveComponent(Component c, Motion motion) {
-		for (final Component component : getComponents()) {
-			if (component != c && component.isMobile() && component.getPosition().equals(motion.getTargetPosition())) {
-				LOGGER.info("Collision detected between " + c + " and " + component);
-				return 0;
+		synchronized (this) {
+			for (final Component component : getComponents()) {
+				if (component != c && component.isMobile() && component.getPosition().equals(motion.getTargetPosition())) {
+					return 0;
+				}
 			}
+			LOGGER.fine("Moving " + c + " to " + motion.getTargetPosition());
+			return motion.moveToTarget();
 		}
-		LOGGER.fine("Moving " + c + " to " + motion.getTargetPosition());
-		return 1;
 	}
+	
+	public void update(Factory factoryModel) {
+		components = factoryModel.components;
+		simulationStarted = factoryModel.simulationStarted;
+		setId(factoryModel.getId());
+		LOGGER.info("updated canvas : " + this.toString());
+		LOGGER.info(getObservers().toString());
+
+		notifyObservers();
+
+	}
+
 }

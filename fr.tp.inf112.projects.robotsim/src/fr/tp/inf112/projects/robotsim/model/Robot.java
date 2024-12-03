@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import fr.tp.inf112.projects.canvas.model.Style;
 import fr.tp.inf112.projects.canvas.model.impl.RGBColor;
 import fr.tp.inf112.projects.robotsim.model.motion.Motion;
@@ -26,17 +28,28 @@ public class Robot extends Component {
 	
 	private final List<Component> targets;
 	
+	@JsonIgnore
 	private transient Iterator<Component> targetsIter;
 	
 	private Component currentTarget;
 	
+	@JsonIgnore
 	private transient Iterator<Position> currentPathIter;
 	
+	@JsonIgnore
 	private transient boolean blocked;
 	
 	private Position nextPosition;
 	
 	private FactoryPathFinder pathFinder;
+	
+	public Robot() {
+		this.battery = new Battery();
+		this.targets = new ArrayList<>();
+		this.pathFinder = null;
+
+	}
+
 
 	public Robot(final Factory factory,
 				 final FactoryPathFinder pathFinder,

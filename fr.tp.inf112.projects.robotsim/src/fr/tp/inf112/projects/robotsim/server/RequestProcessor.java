@@ -2,6 +2,7 @@ package fr.tp.inf112.projects.robotsim.server;
 
 import java.io.*;
 import java.net.Socket;
+import java.util.logging.Logger;
 
 import fr.tp.inf112.projects.canvas.model.Canvas;
 import fr.tp.inf112.projects.canvas.view.FileCanvasChooser;
@@ -9,6 +10,8 @@ import fr.tp.inf112.projects.robotsim.model.Factory;
 import fr.tp.inf112.projects.robotsim.model.FactoryPersistenceManager;
 
 public class RequestProcessor implements Runnable {
+	
+	private static final Logger LOGGER = Logger.getLogger(RequestProcessor.class.getName());
 
     private Socket socket;
     private FactoryPersistenceManager persistenceManager;
@@ -45,12 +48,12 @@ public class RequestProcessor implements Runnable {
             	System.out.println("Received invalid object type");
             }
         } catch (Exception ex) {
-            System.out.println("Error: " + ex);
+            LOGGER.severe("Read object error: " + ex.getMessage());
         } finally {
             try {
                 socket.close();
             } catch (IOException e) {
-                e.printStackTrace();
+                LOGGER.severe("Close socket error: " + e.getMessage());
             }
         }
     }
