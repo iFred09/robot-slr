@@ -17,8 +17,10 @@ import fr.tp.inf112.projects.robotsim.model.Door;
 import fr.tp.inf112.projects.robotsim.model.Factory;
 import fr.tp.inf112.projects.robotsim.model.FactoryPersistenceManager;
 import fr.tp.inf112.projects.robotsim.model.Machine;
+import fr.tp.inf112.projects.robotsim.model.RemoteFileCanvasChooser;
 import fr.tp.inf112.projects.robotsim.model.Robot;
 import fr.tp.inf112.projects.robotsim.model.Room;
+import fr.tp.inf112.projects.robotsim.model.path.CustomDijkstraFactoryPathFinder;
 import fr.tp.inf112.projects.robotsim.model.path.FactoryPathFinder;
 import fr.tp.inf112.projects.robotsim.model.path.JGraphTDijkstraFactoryPathFinder;
 import fr.tp.inf112.projects.robotsim.model.shapes.BasicPolygonShape;
@@ -76,13 +78,13 @@ public class SimulatorApplication {
 		 * robot1.addTarget(chargingStation);
 		 */
 		
-		for (int i = 0 ; i < 5 ; i++) {
+		for (int i = 1 ; i <= 5 ; i++) {
 			final FactoryPathFinder customPathFinder = new JGraphTDijkstraFactoryPathFinder(factory, 5);
 			final Robot robot = new Robot(factory, customPathFinder, new CircularShape(i * 5, 5, 2), new Battery(10), "Robot " + i);
 			robot.addTarget(machine1);
 			robot.addTarget(machine2);
 			robot.addTarget(new Conveyor(factory, conveyorShape, "Conveyor 1"));
-			robot.addTarget(chargingStation);
+			//robot.addTarget(chargingStation);
 			
 		}
 		
@@ -92,7 +94,7 @@ public class SimulatorApplication {
 			  
 			@Override
 	        public void run() {
-				final FileCanvasChooser canvasChooser = new FileCanvasChooser("factory", "Puck Factory");
+				final RemoteFileCanvasChooser canvasChooser = new RemoteFileCanvasChooser("factory", "Puck Factory", host, port);
 				final Component factoryViewer = new CanvasViewer(new SimulatorController(factory, new FactoryPersistenceManager(canvasChooser)));
 				canvasChooser.setViewer(factoryViewer);
 				//new CanvasViewer(factory);

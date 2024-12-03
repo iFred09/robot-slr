@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-12-03T22:33:05.863869Z</date>
+  <millis>1733265185863</millis>
+  <nanos>869000</nanos>
+  <sequence>486</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>17</thread>
+  <message>containing window = javax.swing.Popup$HeavyWeightWindow[win0,42,88,154x46,hidden,layout=java.awt.BorderLayout,rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = false</message>
+</record>
+<record>
+  <date>2024-12-03T22:33:05.866383Z</date>
+  <millis>1733265185866</millis>
+  <nanos>383000</nanos>
+  <sequence>487</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>17</thread>
+  <message>java.awt.event.FocusEvent[FOCUS_LOST,permanent,opposite=fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x892,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true],cause=UNKNOWN] on javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]</message>
+</record>
+<record>
+  <date>2024-12-03T22:33:05.866606Z</date>
+  <millis>1733265185866</millis>
+  <nanos>606000</nanos>
+  <sequence>488</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>17</thread>
+  <message>java.awt.event.FocusEvent[FOCUS_GAINED,permanent,opposite=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],cause=UNKNOWN] on frame0</message>
+</record>
+<record>
+  <date>2024-12-03T22:33:05.866726Z</date>
+  <millis>1733265185866</millis>
+  <nanos>726000</nanos>
+  <sequence>489</sequence>
+  <logger>sun.awt.im.InputContext</logger>
+  <level>FINE</level>
+  <class>sun.awt.im.InputContext</class>
+  <method>activateInputMethod</method>
+  <thread>17</thread>
+  <message>Current client component javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]</message>
+</record>
+<record>
+  <date>2024-12-03T22:33:05.866806Z</date>
+  <millis>1733265185866</millis>
+  <nanos>806000</nanos>
+  <sequence>490</sequence>
+  <logger>sun.awt.im.InputContext</logger>
+  <level>FINE</level>
+  <class>sun.awt.im.InputContext</class>
+  <method>activateInputMethod</method>
+  <thread>17</thread>
+  <message>Current client component fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x892,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]</message>
+</record>
+<record>
+  <date>2024-12-03T22:33:08.239490Z</date>
+  <millis>1733265188239</millis>
+  <nanos>490000</nanos>
+  <sequence>491</sequence>
+  <logger>sun.lwawt.focus.LWWindowPeer</logger>
+  <level>FINE</level>
+  <class>sun.lwawt.LWWindowPeer</class>
+  <method>changeFocusedWindow</method>
+  <thread>15</thread>
+  <message>loosing focus window: sun.lwawt.LWWindowPeer@532c06d [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x892,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
+</record>
+<record>
+  <date>2024-12-03T22:33:08.240217Z</date>
+  <millis>1733265188240</millis>
+  <nanos>217000</nanos>
+  <sequence>493</sequence>
+  <logger>sun.lwawt.focus.LWWindowPeer</logger>
+  <level>FINE</level>
+  <class>sun.lwawt.LWWindowPeer</class>
+  <method>changeFocusedWindow</method>
+  <thread>15</thread>
+  <message>loosing focus window: sun.lwawt.LWWindowPeer@532c06d [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x892,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
+</record>
+<record>
+  <date>2024-12-03T22:33:08.240501Z</date>
+  <millis>1733265188240</millis>
+  <nanos>501000</nanos>
+  <sequence>492</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>17</thread>
+  <message>sun.awt.TimedWindowEvent[WINDOW_LOST_FOCUS,opposite=null,oldState=0,newState=0] on frame0</message>
+</record>
+<record>
+  <date>2024-12-03T22:33:08.241156Z</date>
+  <millis>1733265188241</millis>
+  <nanos>156000</nanos>
+  <sequence>494</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>17</thread>
+  <message>Active fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x892,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], Current focused fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x892,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], losing focus fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x892,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true] opposite null</message>
+</record>
+<record>
+  <date>2024-12-03T22:33:08.242033Z</date>
+  <millis>1733265188242</millis>
+  <nanos>33000</nanos>
+  <sequence>495</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>17</thread>
+  <message>java.awt.event.FocusEvent[FOCUS_LOST,temporary,opposite=null,cause=ACTIVATION] on frame0</message>
+</record>
+<record>
+  <date>2024-12-03T22:33:08.242539Z</date>
+  <millis>1733265188242</millis>
+  <nanos>539000</nanos>
+  <sequence>496</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>17</thread>
+  <message>java.awt.event.WindowEvent[WINDOW_DEACTIVATED,opposite=null,oldState=0,newState=0] on frame0</message>
+</record>
+<record>
+  <date>2024-12-03T22:35:06.147048Z</date>
+  <millis>1733265306147</millis>
+  <nanos>48000</nanos>
+  <sequence>497</sequence>
+  <logger>sun.lwawt.focus.LWWindowPeer</logger>
+  <level>FINE</level>
+  <class>sun.lwawt.LWWindowPeer</class>
+  <method>changeFocusedWindow</method>
+  <thread>15</thread>
+  <message>gaining focus window: sun.lwawt.LWWindowPeer@532c06d [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x892,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
+</record>
+<record>
+  <date>2024-12-03T22:35:06.150257Z</date>
+  <millis>1733265306150</millis>
+  <nanos>257000</nanos>
+  <sequence>498</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>17</thread>
+  <message>sun.awt.TimedWindowEvent[WINDOW_GAINED_FOCUS,opposite=null,oldState=0,newState=0] on frame0</message>
+</record>
+<record>
+  <date>2024-12-03T22:35:06.156258Z</date>
+  <millis>1733265306156</millis>
+  <nanos>258000</nanos>
+  <sequence>499</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>17</thread>
+  <message>java.awt.event.WindowEvent[WINDOW_ACTIVATED,opposite=null,oldState=0,newState=0] on frame0</message>
+</record>
+<record>
+  <date>2024-12-03T22:35:06.157211Z</date>
+  <millis>1733265306157</millis>
+  <nanos>211000</nanos>
+  <sequence>500</sequence>
+  <logger>sun.lwawt.focus.LWWindowPeer</logger>
+  <level>FINE</level>
+  <class>sun.lwawt.LWWindowPeer</class>
+  <method>requestWindowFocus</method>
+  <thread>17</thread>
+  <message>requesting native focus to sun.lwawt.LWWindowPeer@532c06d [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x892,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
+</record>
+<record>
+  <date>2024-12-03T22:35:06.157606Z</date>
+  <millis>1733265306157</millis>
+  <nanos>606000</nanos>
+  <sequence>501</sequence>
+  <logger>sun.lwawt.focus.LWWindowPeer</logger>
+  <level>FINE</level>
+  <class>sun.lwawt.LWWindowPeer</class>
+  <method>changeFocusedWindow</method>
+  <thread>17</thread>
+  <message>gaining focus window: sun.lwawt.LWWindowPeer@532c06d [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x892,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
+</record>
+<record>
+  <date>2024-12-03T22:35:06.157803Z</date>
+  <millis>1733265306157</millis>
+  <nanos>803000</nanos>
+  <sequence>502</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>17</thread>
+  <message>sun.awt.TimedWindowEvent[WINDOW_GAINED_FOCUS,opposite=fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x892,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true],oldState=0,newState=0] on frame0</message>
+</record>
+<record>
+  <date>2024-12-03T22:35:06.157926Z</date>
+  <millis>1733265306157</millis>
+  <nanos>926000</nanos>
+  <sequence>503</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>17</thread>
+  <message>java.awt.event.FocusEvent[FOCUS_GAINED,permanent,opposite=null,cause=ACTIVATION] on frame0</message>
+</record>
+<record>
+  <date>2024-12-03T22:35:06.158087Z</date>
+  <millis>1733265306158</millis>
+  <nanos>87000</nanos>
+  <sequence>504</sequence>
+  <logger>sun.awt.im.InputContext</logger>
+  <level>FINE</level>
+  <class>sun.awt.im.InputContext</class>
+  <method>activateInputMethod</method>
+  <thread>17</thread>
+  <message>Current client component fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x892,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]</message>
+</record>
+<record>
+  <date>2024-12-03T22:35:27.815133Z</date>
+  <millis>1733265327815</millis>
+  <nanos>133000</nanos>
+  <sequence>505</sequence>
+  <logger>sun.lwawt.focus.LWWindowPeer</logger>
+  <level>FINE</level>
+  <class>sun.lwawt.LWWindowPeer</class>
+  <method>changeFocusedWindow</method>
+  <thread>15</thread>
+  <message>loosing focus window: sun.lwawt.LWWindowPeer@532c06d [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x892,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
+</record>
+<record>
+  <date>2024-12-03T22:35:27.816005Z</date>
+  <millis>1733265327816</millis>
+  <nanos>5000</nanos>
+  <sequence>506</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>17</thread>
+  <message>sun.awt.TimedWindowEvent[WINDOW_LOST_FOCUS,opposite=null,oldState=0,newState=0] on frame0</message>
+</record>
+<record>
+  <date>2024-12-03T22:35:27.816156Z</date>
+  <millis>1733265327816</millis>
+  <nanos>156000</nanos>
+  <sequence>507</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>17</thread>
+  <message>Active fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x892,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], Current focused fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x892,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], losing focus fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x892,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true] opposite null</message>
+</record>
+<record>
+  <date>2024-12-03T22:35:27.816556Z</date>
+  <millis>1733265327816</millis>
+  <nanos>556000</nanos>
+  <sequence>508</sequence>
+  <logger>sun.lwawt.focus.LWWindowPeer</logger>
+  <level>FINE</level>
+  <class>sun.lwawt.LWWindowPeer</class>
+  <method>changeFocusedWindow</method>
+  <thread>15</thread>
+  <message>loosing focus window: sun.lwawt.LWWindowPeer@532c06d [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x892,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x864,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
+</record>
+<record>
+  <date>2024-12-03T22:35:27.818064Z</date>
+  <millis>1733265327818</millis>
+  <nanos>64000</nanos>
+  <sequence>509</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>17</thread>
+  <message>java.awt.event.FocusEvent[FOCUS_LOST,temporary,opposite=null,cause=ACTIVATION] on frame0</message>
+</record>
+<record>
+  <date>2024-12-03T22:35:27.818349Z</date>
+  <millis>1733265327818</millis>
+  <nanos>349000</nanos>
+  <sequence>510</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>17</thread>
+  <message>java.awt.event.WindowEvent[WINDOW_DEACTIVATED,opposite=null,oldState=0,newState=0] on frame0</message>
+</record>
