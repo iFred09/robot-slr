@@ -19,7 +19,6 @@ import fr.tp.inf112.projects.robotsim.model.FactoryPersistenceManager;
 import fr.tp.inf112.projects.robotsim.model.Machine;
 import fr.tp.inf112.projects.robotsim.model.Robot;
 import fr.tp.inf112.projects.robotsim.model.Room;
-import fr.tp.inf112.projects.robotsim.model.path.CustomDijkstraFactoryPathFinder;
 import fr.tp.inf112.projects.robotsim.model.path.FactoryPathFinder;
 import fr.tp.inf112.projects.robotsim.model.path.JGraphTDijkstraFactoryPathFinder;
 import fr.tp.inf112.projects.robotsim.model.shapes.BasicPolygonShape;
@@ -29,6 +28,10 @@ import fr.tp.inf112.projects.robotsim.model.shapes.RectangularShape;
 public class SimulatorApplication {
 	
 	private static final Logger LOGGER = Logger.getLogger(SimulatorApplication.class.getName());
+	
+	private static final String host = "localhost";
+	private static final int port = 2222;
+
 
 	public static void main(String[] args) {
 		
@@ -64,19 +67,25 @@ public class SimulatorApplication {
 		final Room chargingRoom = new Room(factory, new RectangularShape(125, 125, 50, 50), "Charging Room");
 		new Door(chargingRoom, Room.WALL.RIGHT, 10, 20, false, "Entrance");
 		final ChargingStation chargingStation = new ChargingStation(factory, new RectangularShape(150, 145, 15, 15), "Charging Station");
-
-		final FactoryPathFinder jgraphPahtFinder = new JGraphTDijkstraFactoryPathFinder(factory, 5);
-		final Robot robot1 = new Robot(factory, jgraphPahtFinder, new CircularShape(5, 5, 2), new Battery(10), "Robot 1");
-		robot1.addTarget(machine1);
-		robot1.addTarget(machine2);
-		robot1.addTarget(new Conveyor(factory, conveyorShape, "Conveyor 1"));
-//		robot1.addTarget(chargingStation);
-
-		final FactoryPathFinder customPathFinder = new CustomDijkstraFactoryPathFinder(factory, 5);
-		final Robot robot2 = new Robot(factory, customPathFinder, new CircularShape(15, 5, 2), new Battery(10), "Robot 2");
-		robot2.addTarget(machine1);
-		robot2.addTarget(machine2);
-		robot2.addTarget(new Conveyor(factory, conveyorShape, "Conveyor 1"));
+		/*
+		 * final FactoryPathFinder jgraphPahtFinder = new
+		 * JGraphTDijkstraFactoryPathFinder(factory, 5); final Robot robot1 = new
+		 * Robot(factory, jgraphPahtFinder, new CircularShape(5, 5, 2), new Battery(10),
+		 * "Robot 1"); robot1.addTarget(machine1); robot1.addTarget(machine2);
+		 * robot1.addTarget(new Conveyor(factory, conveyorShape, "Conveyor 1")); //
+		 * robot1.addTarget(chargingStation);
+		 */
+		
+		for (int i = 0 ; i < 5 ; i++) {
+			final FactoryPathFinder customPathFinder = new JGraphTDijkstraFactoryPathFinder(factory, 5);
+			final Robot robot = new Robot(factory, customPathFinder, new CircularShape(i * 5, 5, 2), new Battery(10), "Robot " + i);
+			robot.addTarget(machine1);
+			robot.addTarget(machine2);
+			robot.addTarget(new Conveyor(factory, conveyorShape, "Conveyor 1"));
+			robot.addTarget(chargingStation);
+			
+		}
+		
 //		robot2.addTarget(chargingStation);
 		
 		SwingUtilities.invokeLater(new Runnable() {

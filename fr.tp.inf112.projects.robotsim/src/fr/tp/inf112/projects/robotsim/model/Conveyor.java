@@ -1,5 +1,7 @@
 package fr.tp.inf112.projects.robotsim.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import fr.tp.inf112.projects.robotsim.model.shapes.BasicPolygonShape;
 import fr.tp.inf112.projects.robotsim.model.shapes.PositionedShape;
 
@@ -26,4 +28,11 @@ public class Conveyor extends Component {
 	public boolean canBeOverlayed(final PositionedShape shape) {
 		return true;
 	}
+	
+	@JsonIgnore
+	@Override
+	public boolean isSimulationStarted() {
+		return super.isSimulationStarted();
+	}
+
 }

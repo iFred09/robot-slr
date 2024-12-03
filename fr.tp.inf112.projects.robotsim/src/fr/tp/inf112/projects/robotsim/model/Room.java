@@ -3,6 +3,8 @@ package fr.tp.inf112.projects.robotsim.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import fr.tp.inf112.projects.robotsim.model.shapes.PositionedShape;
 import fr.tp.inf112.projects.robotsim.model.shapes.RectangularShape;
 
@@ -25,6 +27,10 @@ public class Room extends Component {
 	private final List<Area> areas;
 
 	private final List<Door> doors;
+	
+	public Room() {
+		this(null, null, null);
+	}
 
 	public Room(final Factory factory,
 				final RectangularShape shape,
@@ -92,4 +98,11 @@ public class Room extends Component {
 	public String toString() {
 		return super.toString() + " areas=" + areas + "]";
 	}
+	
+	@JsonIgnore
+	@Override
+	public boolean isSimulationStarted() {
+		return super.isSimulationStarted();
+	}
+
 }

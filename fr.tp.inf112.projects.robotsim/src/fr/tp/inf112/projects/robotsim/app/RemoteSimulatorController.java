@@ -2,6 +2,7 @@ package fr.tp.inf112.projects.robotsim.app;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.util.List;
 import java.util.logging.Logger;
 
 import fr.tp.inf112.projects.canvas.model.Canvas;
@@ -68,5 +69,6 @@ public class RemoteSimulatorController extends SimulatorController {
 	public void update(Canvas c) {
 		((Factory) getCanvas()).update((Factory) c);
 	}
+
 
 }

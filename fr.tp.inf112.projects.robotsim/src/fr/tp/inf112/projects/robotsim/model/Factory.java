@@ -29,7 +29,7 @@ public class Factory extends Component implements Canvas, Observable {
 	@JsonInclude
 	private boolean simulationStarted;
 
-	@JsonManagedReference("Factory")
+	@JsonManagedReference
 	private List<Component> components;
 	private final Random random = new Random();
 

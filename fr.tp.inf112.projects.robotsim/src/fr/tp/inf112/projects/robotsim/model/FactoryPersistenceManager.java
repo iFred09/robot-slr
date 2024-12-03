@@ -10,12 +10,17 @@ import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.logging.Logger;
 
 import fr.tp.inf112.projects.canvas.model.Canvas;
 import fr.tp.inf112.projects.canvas.model.CanvasChooser;
 import fr.tp.inf112.projects.canvas.model.impl.AbstractCanvasPersistenceManager;
 
 public class FactoryPersistenceManager extends AbstractCanvasPersistenceManager {
+	
+	private static final Logger LOGGER = Logger.getLogger(FactoryPersistenceManager.class.getName());
 	
 	public FactoryPersistenceManager(final CanvasChooser canvasChooser) {
 		super(canvasChooser);
@@ -65,4 +70,20 @@ public class FactoryPersistenceManager extends AbstractCanvasPersistenceManager 
 		
 		return canvasFile.delete();
 	}
+	
+	public ArrayList<Canvas> getCanvases() {
+		final File[] files = new File(".").listFiles();
+		final ArrayList<Canvas> canvases = new ArrayList<>();
+		Arrays.stream(files)
+			.filter(file -> file.getName().endsWith(".factory"))
+			.forEach(file -> {
+				try {
+					canvases.add(read(file.getName()));
+				} catch (IOException ex) {
+					LOGGER.severe("Cannot get canvases: " + ex);
+				}
+			});
+		return canvases;
+	}
+
 }

@@ -37,7 +37,7 @@ public class Robot extends Component {
 	private transient Iterator<Position> currentPathIter;
 	
 	@JsonIgnore
-	private transient boolean blocked;
+	private boolean blocked;
 	
 	private Position nextPosition;
 	
@@ -158,10 +158,7 @@ public class Robot extends Component {
 		}
 		
 		final Position nextPosition = this.nextPosition == null ? currentPathIter.next() : this.nextPosition;
-		final PositionedShape shape = new RectangularShape(nextPosition.getxCoordinate(),
-				   										   nextPosition.getyCoordinate(),
-				   										   2,
-				   										   2);
+		
 		// if (getFactory().hasMobileComponentAt(shape, this)) {
 		//	this.nextPosition = nextPosition;
 		//	
@@ -186,4 +183,11 @@ public class Robot extends Component {
 	public Style getStyle() {
 		return blocked ? BLOCKED_STYLE : STYLE;
 	}
+	
+	@JsonIgnore
+	@Override
+	public boolean isSimulationStarted() {
+		return super.isSimulationStarted();
+	}
+
 }
