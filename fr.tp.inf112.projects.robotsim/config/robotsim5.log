@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-12-03T22:38:24.305134Z</date>
+  <millis>1733265504305</millis>
+  <nanos>134000</nanos>
+  <sequence>714</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = javax.swing.JRootPane[,0,28,1512x865,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; isLightweight=true</message>
+</record>
+<record>
+  <date>2024-12-03T22:38:24.305165Z</date>
+  <millis>1733265504305</millis>
+  <nanos>165000</nanos>
+  <sequence>715</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = javax.swing.JRootPane[,0,28,1512x865,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; isLightweight = true</message>
+</record>
+<record>
+  <date>2024-12-03T22:38:24.305185Z</date>
+  <millis>1733265504305</millis>
+  <nanos>185000</nanos>
+  <sequence>716</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>17</thread>
+  <message>this = javax.swing.JRootPane[,0,28,1512x865,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2024-12-03T22:38:24.305500Z</date>
+  <millis>1733265504305</millis>
+  <nanos>500000</nanos>
+  <sequence>717</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x893,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x865,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; isLightweight=false</message>
+</record>
+<record>
+  <date>2024-12-03T22:38:24.305530Z</date>
+  <millis>1733265504305</millis>
+  <nanos>530000</nanos>
+  <sequence>718</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x893,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x865,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; isLightweight = false</message>
+</record>
+<record>
+  <date>2024-12-03T22:38:24.305552Z</date>
+  <millis>1733265504305</millis>
+  <nanos>552000</nanos>
+  <sequence>719</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>17</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x893,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x865,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = false; disposing = true</message>
+</record>
+</log>

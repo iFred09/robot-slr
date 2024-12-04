@@ -2,154 +2,94 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2024-12-03T22:30:46.578149Z</date>
-  <millis>1733265046578</millis>
-  <nanos>149000</nanos>
-  <sequence>403</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <date>2024-12-04T12:56:32.255920Z</date>
+  <millis>1733316992255</millis>
+  <nanos>920000</nanos>
+  <sequence>629</sequence>
+  <logger>java.awt.mixing.Component</logger>
   <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
   <thread>17</thread>
-  <message>java.awt.event.WindowEvent[WINDOW_ACTIVATED,opposite=null,oldState=0,newState=0] on frame0</message>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,154x46,invalid,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]; areBoundsValid = false</message>
 </record>
 <record>
-  <date>2024-12-03T22:30:46.578904Z</date>
-  <millis>1733265046578</millis>
-  <nanos>904000</nanos>
-  <sequence>404</sequence>
-  <logger>sun.lwawt.focus.LWWindowPeer</logger>
+  <date>2024-12-04T12:56:32.255960Z</date>
+  <millis>1733316992255</millis>
+  <nanos>960000</nanos>
+  <sequence>630</sequence>
+  <logger>java.awt.mixing.Container</logger>
   <level>FINE</level>
-  <class>sun.lwawt.LWWindowPeer</class>
-  <method>requestWindowFocus</method>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
   <thread>17</thread>
-  <message>requesting native focus to sun.lwawt.LWWindowPeer@7f186500 [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
+  <message>this = javax.swing.JRootPane[,0,0,154x46,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; isLightweight=true</message>
 </record>
 <record>
-  <date>2024-12-03T22:30:46.597630Z</date>
-  <millis>1733265046597</millis>
-  <nanos>630000</nanos>
-  <sequence>405</sequence>
-  <logger>sun.lwawt.focus.LWWindowPeer</logger>
+  <date>2024-12-04T12:56:32.255979Z</date>
+  <millis>1733316992255</millis>
+  <nanos>979000</nanos>
+  <sequence>631</sequence>
+  <logger>java.awt.mixing.Component</logger>
   <level>FINE</level>
-  <class>sun.lwawt.LWWindowPeer</class>
-  <method>changeFocusedWindow</method>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
   <thread>17</thread>
-  <message>gaining focus window: sun.lwawt.LWWindowPeer@7f186500 [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
+  <message>this = javax.swing.JRootPane[,0,0,154x46,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; isLightweight = true</message>
 </record>
 <record>
-  <date>2024-12-03T22:30:46.611517Z</date>
-  <millis>1733265046611</millis>
-  <nanos>517000</nanos>
-  <sequence>406</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <date>2024-12-04T12:56:32.256002Z</date>
+  <millis>1733316992256</millis>
+  <nanos>2000</nanos>
+  <sequence>632</sequence>
+  <logger>java.awt.mixing.Component</logger>
   <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
   <thread>17</thread>
-  <message>sun.awt.TimedWindowEvent[WINDOW_GAINED_FOCUS,opposite=fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true],oldState=0,newState=0] on frame0</message>
+  <message>this = javax.swing.JRootPane[,0,0,154x46,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; areBoundsValid = false</message>
 </record>
 <record>
-  <date>2024-12-03T22:30:46.612102Z</date>
-  <millis>1733265046612</millis>
-  <nanos>102000</nanos>
-  <sequence>407</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <date>2024-12-04T12:56:32.256128Z</date>
+  <millis>1733316992256</millis>
+  <nanos>128000</nanos>
+  <sequence>633</sequence>
+  <logger>java.awt.mixing.Container</logger>
   <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
   <thread>17</thread>
-  <message>java.awt.event.FocusEvent[FOCUS_GAINED,permanent,opposite=null,cause=ACTIVATION] on frame0</message>
+  <message>this = javax.swing.Popup$HeavyWeightWindow[win0,42,88,154x46,invalid,hidden,layout=java.awt.BorderLayout,rootPaneCheckingEnabled=true]; isLightweight=false</message>
 </record>
 <record>
-  <date>2024-12-03T22:30:46.612482Z</date>
-  <millis>1733265046612</millis>
-  <nanos>482000</nanos>
-  <sequence>408</sequence>
-  <logger>sun.awt.im.InputContext</logger>
+  <date>2024-12-04T12:56:32.256158Z</date>
+  <millis>1733316992256</millis>
+  <nanos>158000</nanos>
+  <sequence>634</sequence>
+  <logger>java.awt.mixing.Component</logger>
   <level>FINE</level>
-  <class>sun.awt.im.InputContext</class>
-  <method>activateInputMethod</method>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
   <thread>17</thread>
-  <message>Current client component fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]</message>
+  <message>this = javax.swing.Popup$HeavyWeightWindow[win0,42,88,154x46,invalid,hidden,layout=java.awt.BorderLayout,rootPaneCheckingEnabled=true]; isLightweight = false</message>
 </record>
 <record>
-  <date>2024-12-03T22:30:51.613046Z</date>
-  <millis>1733265051613</millis>
-  <nanos>46000</nanos>
-  <sequence>409</sequence>
-  <logger>sun.lwawt.focus.LWWindowPeer</logger>
+  <date>2024-12-04T12:56:32.256185Z</date>
+  <millis>1733316992256</millis>
+  <nanos>185000</nanos>
+  <sequence>635</sequence>
+  <logger>java.awt.mixing.Component</logger>
   <level>FINE</level>
-  <class>sun.lwawt.LWWindowPeer</class>
-  <method>changeFocusedWindow</method>
-  <thread>15</thread>
-  <message>loosing focus window: sun.lwawt.LWWindowPeer@7f186500 [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
-</record>
-<record>
-  <date>2024-12-03T22:30:51.613850Z</date>
-  <millis>1733265051613</millis>
-  <nanos>850000</nanos>
-  <sequence>410</sequence>
-  <logger>sun.lwawt.focus.LWWindowPeer</logger>
-  <level>FINE</level>
-  <class>sun.lwawt.LWWindowPeer</class>
-  <method>changeFocusedWindow</method>
-  <thread>15</thread>
-  <message>loosing focus window: sun.lwawt.LWWindowPeer@7f186500 [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
-</record>
-<record>
-  <date>2024-12-03T22:30:51.624493Z</date>
-  <millis>1733265051624</millis>
-  <nanos>493000</nanos>
-  <sequence>411</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
-  <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
   <thread>17</thread>
-  <message>sun.awt.TimedWindowEvent[WINDOW_LOST_FOCUS,opposite=null,oldState=0,newState=0] on frame0</message>
+  <message>containing window = javax.swing.Popup$HeavyWeightWindow[win0,42,88,154x46,invalid,hidden,layout=java.awt.BorderLayout,rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = false; disposing = true</message>
 </record>
 <record>
-  <date>2024-12-03T22:30:51.624789Z</date>
-  <millis>1733265051624</millis>
-  <nanos>789000</nanos>
-  <sequence>412</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
-  <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
-  <thread>17</thread>
-  <message>Active fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], Current focused fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], losing focus fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true] opposite null</message>
-</record>
-<record>
-  <date>2024-12-03T22:30:51.625715Z</date>
-  <millis>1733265051625</millis>
-  <nanos>715000</nanos>
-  <sequence>413</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
-  <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
-  <thread>17</thread>
-  <message>java.awt.event.FocusEvent[FOCUS_LOST,temporary,opposite=null,cause=ACTIVATION] on frame0</message>
-</record>
-<record>
-  <date>2024-12-03T22:30:51.626344Z</date>
-  <millis>1733265051626</millis>
-  <nanos>344000</nanos>
-  <sequence>414</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
-  <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
-  <thread>17</thread>
-  <message>java.awt.event.WindowEvent[WINDOW_DEACTIVATED,opposite=null,oldState=0,newState=0] on frame0</message>
-</record>
-<record>
-  <date>2024-12-03T22:31:13.120981Z</date>
-  <millis>1733265073120</millis>
-  <nanos>981000</nanos>
-  <sequence>415</sequence>
+  <date>2024-12-04T12:56:32.262381Z</date>
+  <millis>1733316992262</millis>
+  <nanos>381000</nanos>
+  <sequence>636</sequence>
   <logger>sun.lwawt.focus.LWWindowPeer</logger>
   <level>FINE</level>
   <class>sun.lwawt.LWWindowPeer</class>
@@ -158,158 +98,339 @@
   <message>gaining focus window: sun.lwawt.LWWindowPeer@7f186500 [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
 </record>
 <record>
-  <date>2024-12-03T22:31:13.121345Z</date>
-  <millis>1733265073121</millis>
-  <nanos>345000</nanos>
-  <sequence>416</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <date>2024-12-04T12:56:32.274831Z</date>
+  <millis>1733316992274</millis>
+  <nanos>831000</nanos>
+  <sequence>637</sequence>
+  <logger>java.awt.mixing.Container</logger>
   <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
   <thread>17</thread>
-  <message>sun.awt.TimedWindowEvent[WINDOW_GAINED_FOCUS,opposite=null,oldState=0,newState=0] on frame0</message>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; isLightweight=false</message>
 </record>
 <record>
-  <date>2024-12-03T22:31:13.121689Z</date>
-  <millis>1733265073121</millis>
-  <nanos>689000</nanos>
-  <sequence>417</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <date>2024-12-04T12:56:32.274995Z</date>
+  <millis>1733316992274</millis>
+  <nanos>995000</nanos>
+  <sequence>638</sequence>
+  <logger>java.awt.mixing.Component</logger>
   <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
   <thread>17</thread>
-  <message>java.awt.event.WindowEvent[WINDOW_ACTIVATED,opposite=null,oldState=0,newState=0] on frame0</message>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; isLightweight = false</message>
 </record>
 <record>
-  <date>2024-12-03T22:31:13.127529Z</date>
-  <millis>1733265073127</millis>
-  <nanos>529000</nanos>
-  <sequence>418</sequence>
-  <logger>sun.lwawt.focus.LWWindowPeer</logger>
+  <date>2024-12-04T12:56:32.275222Z</date>
+  <millis>1733316992275</millis>
+  <nanos>222000</nanos>
+  <sequence>639</sequence>
+  <logger>java.awt.mixing.Component</logger>
   <level>FINE</level>
-  <class>sun.lwawt.LWWindowPeer</class>
-  <method>requestWindowFocus</method>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
   <thread>17</thread>
-  <message>requesting native focus to sun.lwawt.LWWindowPeer@7f186500 [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = true</message>
 </record>
 <record>
-  <date>2024-12-03T22:31:13.128069Z</date>
-  <millis>1733265073128</millis>
-  <nanos>69000</nanos>
-  <sequence>419</sequence>
-  <logger>sun.lwawt.focus.LWWindowPeer</logger>
+  <date>2024-12-04T12:56:32.275476Z</date>
+  <millis>1733316992275</millis>
+  <nanos>476000</nanos>
+  <sequence>640</sequence>
+  <logger>java.awt.mixing.Container</logger>
   <level>FINE</level>
-  <class>sun.lwawt.LWWindowPeer</class>
-  <method>changeFocusedWindow</method>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
   <thread>17</thread>
-  <message>gaining focus window: sun.lwawt.LWWindowPeer@7f186500 [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasPanel[,0,22,1512x840,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]; isLightweight=true</message>
 </record>
 <record>
-  <date>2024-12-03T22:31:13.129283Z</date>
-  <millis>1733265073129</millis>
-  <nanos>283000</nanos>
-  <sequence>420</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <date>2024-12-04T12:56:32.275516Z</date>
+  <millis>1733316992275</millis>
+  <nanos>516000</nanos>
+  <sequence>641</sequence>
+  <logger>java.awt.mixing.Component</logger>
   <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
   <thread>17</thread>
-  <message>sun.awt.TimedWindowEvent[WINDOW_GAINED_FOCUS,opposite=fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true],oldState=0,newState=0] on frame0</message>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasPanel[,0,22,1512x840,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]; isLightweight = true</message>
 </record>
 <record>
-  <date>2024-12-03T22:31:13.129383Z</date>
-  <millis>1733265073129</millis>
-  <nanos>383000</nanos>
-  <sequence>421</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <date>2024-12-04T12:56:32.275569Z</date>
+  <millis>1733316992275</millis>
+  <nanos>569000</nanos>
+  <sequence>642</sequence>
+  <logger>java.awt.mixing.Component</logger>
   <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
   <thread>17</thread>
-  <message>java.awt.event.FocusEvent[FOCUS_GAINED,permanent,opposite=null,cause=ACTIVATION] on frame0</message>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = true</message>
 </record>
 <record>
-  <date>2024-12-03T22:31:13.129610Z</date>
-  <millis>1733265073129</millis>
-  <nanos>610000</nanos>
-  <sequence>422</sequence>
-  <logger>sun.awt.im.InputContext</logger>
+  <date>2024-12-04T12:56:32.275640Z</date>
+  <millis>1733316992275</millis>
+  <nanos>640000</nanos>
+  <sequence>643</sequence>
+  <logger>java.awt.mixing.Container</logger>
   <level>FINE</level>
-  <class>sun.awt.im.InputContext</class>
-  <method>activateInputMethod</method>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
   <thread>17</thread>
-  <message>Current client component fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]</message>
+  <message>this = fr.tp.inf112.projects.canvas.view.AnimateMenu[,42,0,89x21,invalid,alignmentX=0.0,alignmentY=0.0,border=com.apple.laf.AquaMenuBorder@5e190656,flags=264,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],paintBorder=false,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Animation]; isLightweight=true</message>
 </record>
 <record>
-  <date>2024-12-03T22:31:16.396034Z</date>
-  <millis>1733265076396</millis>
-  <nanos>34000</nanos>
-  <sequence>423</sequence>
+  <date>2024-12-04T12:56:32.275675Z</date>
+  <millis>1733316992275</millis>
+  <nanos>675000</nanos>
+  <sequence>644</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.AnimateMenu[,42,0,89x21,invalid,alignmentX=0.0,alignmentY=0.0,border=com.apple.laf.AquaMenuBorder@5e190656,flags=264,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],paintBorder=false,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Animation]; isLightweight = true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:32.275699Z</date>
+  <millis>1733316992275</millis>
+  <nanos>699000</nanos>
+  <sequence>645</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>17</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:32.275760Z</date>
+  <millis>1733316992275</millis>
+  <nanos>760000</nanos>
+  <sequence>646</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.FileMenu[,0,0,42x21,invalid,alignmentX=0.0,alignmentY=0.0,border=com.apple.laf.AquaMenuBorder@5e190656,flags=264,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],paintBorder=false,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=File]; isLightweight=true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:32.275793Z</date>
+  <millis>1733316992275</millis>
+  <nanos>793000</nanos>
+  <sequence>647</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.FileMenu[,0,0,42x21,invalid,alignmentX=0.0,alignmentY=0.0,border=com.apple.laf.AquaMenuBorder@5e190656,flags=264,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],paintBorder=false,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=File]; isLightweight = true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:32.275827Z</date>
+  <millis>1733316992275</millis>
+  <nanos>827000</nanos>
+  <sequence>648</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>17</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:32.275866Z</date>
+  <millis>1733316992275</millis>
+  <nanos>866000</nanos>
+  <sequence>649</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewerMenuBar[,0,0,1512x22,invalid,layout=javax.swing.plaf.basic.DefaultMenuLayout,alignmentX=0.0,alignmentY=0.0,border=com.apple.laf.AquaMenuBarBorder@4a3d75af,flags=392,maximumSize=,minimumSize=,preferredSize=,margin=,paintBorder=true]; isLightweight=true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:32.275889Z</date>
+  <millis>1733316992275</millis>
+  <nanos>889000</nanos>
+  <sequence>650</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewerMenuBar[,0,0,1512x22,invalid,layout=javax.swing.plaf.basic.DefaultMenuLayout,alignmentX=0.0,alignmentY=0.0,border=com.apple.laf.AquaMenuBarBorder@4a3d75af,flags=392,maximumSize=,minimumSize=,preferredSize=,margin=,paintBorder=true]; isLightweight = true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:32.275916Z</date>
+  <millis>1733316992275</millis>
+  <nanos>916000</nanos>
+  <sequence>651</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>17</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:32.275977Z</date>
+  <millis>1733316992275</millis>
+  <nanos>977000</nanos>
+  <sequence>652</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = javax.swing.JLayeredPane[null.layeredPane,0,0,1512x862,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]; isLightweight=true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:32.276003Z</date>
+  <millis>1733316992276</millis>
+  <nanos>3000</nanos>
+  <sequence>653</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = javax.swing.JLayeredPane[null.layeredPane,0,0,1512x862,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]; isLightweight = true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:32.276039Z</date>
+  <millis>1733316992276</millis>
+  <nanos>39000</nanos>
+  <sequence>654</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>17</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:32.276075Z</date>
+  <millis>1733316992276</millis>
+  <nanos>75000</nanos>
+  <sequence>655</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,1512x862,invalid,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]; isLightweight=true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:32.276093Z</date>
+  <millis>1733316992276</millis>
+  <nanos>93000</nanos>
+  <sequence>656</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,1512x862,invalid,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]; isLightweight = true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:32.276114Z</date>
+  <millis>1733316992276</millis>
+  <nanos>114000</nanos>
+  <sequence>657</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>17</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:32.276142Z</date>
+  <millis>1733316992276</millis>
+  <nanos>142000</nanos>
+  <sequence>658</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = javax.swing.JRootPane[,0,28,1512x862,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; isLightweight=true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:32.276161Z</date>
+  <millis>1733316992276</millis>
+  <nanos>161000</nanos>
+  <sequence>659</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = javax.swing.JRootPane[,0,28,1512x862,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; isLightweight = true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:32.276302Z</date>
+  <millis>1733316992276</millis>
+  <nanos>302000</nanos>
+  <sequence>660</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>17</thread>
+  <message>this = javax.swing.JRootPane[,0,28,1512x862,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:32.276469Z</date>
+  <millis>1733316992276</millis>
+  <nanos>469000</nanos>
+  <sequence>661</sequence>
   <logger>sun.lwawt.focus.LWWindowPeer</logger>
   <level>FINE</level>
   <class>sun.lwawt.LWWindowPeer</class>
   <method>changeFocusedWindow</method>
   <thread>15</thread>
-  <message>loosing focus window: sun.lwawt.LWWindowPeer@7f186500 [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
+  <message>loosing focus window: sun.lwawt.LWWindowPeer@7f186500 [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
 </record>
 <record>
-  <date>2024-12-03T22:31:16.396415Z</date>
-  <millis>1733265076396</millis>
-  <nanos>415000</nanos>
-  <sequence>424</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <date>2024-12-04T12:56:32.276513Z</date>
+  <millis>1733316992276</millis>
+  <nanos>513000</nanos>
+  <sequence>662</sequence>
+  <logger>java.awt.mixing.Container</logger>
   <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
   <thread>17</thread>
-  <message>sun.awt.TimedWindowEvent[WINDOW_LOST_FOCUS,opposite=null,oldState=0,newState=0] on frame0</message>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; isLightweight=false</message>
 </record>
 <record>
-  <date>2024-12-03T22:31:16.396639Z</date>
-  <millis>1733265076396</millis>
-  <nanos>639000</nanos>
-  <sequence>425</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <date>2024-12-04T12:56:32.276629Z</date>
+  <millis>1733316992276</millis>
+  <nanos>629000</nanos>
+  <sequence>663</sequence>
+  <logger>java.awt.mixing.Component</logger>
   <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
   <thread>17</thread>
-  <message>Active fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], Current focused fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], losing focus fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true] opposite null</message>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; isLightweight = false</message>
 </record>
 <record>
-  <date>2024-12-03T22:31:16.397241Z</date>
-  <millis>1733265076397</millis>
-  <nanos>241000</nanos>
-  <sequence>426</sequence>
-  <logger>sun.lwawt.focus.LWWindowPeer</logger>
+  <date>2024-12-04T12:56:32.276664Z</date>
+  <millis>1733316992276</millis>
+  <nanos>664000</nanos>
+  <sequence>664</sequence>
+  <logger>java.awt.mixing.Component</logger>
   <level>FINE</level>
-  <class>sun.lwawt.LWWindowPeer</class>
-  <method>changeFocusedWindow</method>
-  <thread>15</thread>
-  <message>loosing focus window: sun.lwawt.LWWindowPeer@7f186500 [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
-</record>
-<record>
-  <date>2024-12-03T22:31:16.397764Z</date>
-  <millis>1733265076397</millis>
-  <nanos>764000</nanos>
-  <sequence>427</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
-  <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
   <thread>17</thread>
-  <message>java.awt.event.FocusEvent[FOCUS_LOST,temporary,opposite=null,cause=ACTIVATION] on frame0</message>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x890,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x862,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = false; disposing = true</message>
 </record>
-<record>
-  <date>2024-12-03T22:31:16.397933Z</date>
-  <millis>1733265076397</millis>
-  <nanos>933000</nanos>
-  <sequence>428</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
-  <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
-  <thread>17</thread>
-  <message>java.awt.event.WindowEvent[WINDOW_DEACTIVATED,opposite=null,oldState=0,newState=0] on frame0</message>
-</record>
+</log>

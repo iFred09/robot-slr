@@ -36,16 +36,16 @@ public class RequestProcessor implements Runnable {
             if (readObject instanceof String) {
             	Canvas canvasObject = persistenceManager.read((String)readObject);
             	output.writeObject(canvasObject);
-            	System.out.println("Read and sent canvas with ID: " + (String)readObject);
+            	LOGGER.info("Read and sent canvas with ID: " + (String)readObject);
             }
             else if (readObject instanceof Factory) {
                 persistenceManager.persist((Factory) readObject);
                 output.writeObject("Factory persisted successfully");
-                System.out.println("Persisted factory with ID: " + ((Factory)readObject).getId());
+                LOGGER.info("Persisted factory with ID: " + ((Factory)readObject).getId());
             }
             else {
             	output.writeObject("Invalid object");
-            	System.out.println("Received invalid object type");
+            	LOGGER.severe("Received invalid object type");
             }
         } catch (Exception ex) {
             LOGGER.severe("Read object error: " + ex.getMessage());

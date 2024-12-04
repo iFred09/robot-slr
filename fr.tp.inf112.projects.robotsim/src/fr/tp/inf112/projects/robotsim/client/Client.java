@@ -2,9 +2,12 @@ package fr.tp.inf112.projects.robotsim.client;
 
 import java.io.*;
 import java.net.*;
+import java.util.logging.Logger;
+
 import fr.tp.inf112.projects.robotsim.model.Factory;
 
 public class Client {
+	private static final Logger LOGGER = Logger.getLogger(Client.class.getName());
     public static void main(String[] args) {
         try (
             Socket socket = new Socket("localhost", 2222);
@@ -16,21 +19,21 @@ public class Client {
             
             // Send the Factory object to the server
             out.writeObject(factory);
-            System.out.println("Sent Factory object: " + factory.getName());
+            LOGGER.info("Sent Factory object: " + factory.getName());
             
             // Read the response from the server
             Object response = in.readObject();
             if (response instanceof String) {
-                System.out.println("Server response: " + response);
+                LOGGER.info("Server response: " + response);
             } else if (response instanceof Factory) {
                 Factory receivedFactory = (Factory) response;
-                System.out.println("Received Factory object: " + receivedFactory.getName());
+                LOGGER.info("Received Factory object: " + receivedFactory.getName());
             } else {
-                System.out.println("Received unexpected object type");
+                LOGGER.severe("Received unexpected object type");
             }
             
         } catch (IOException | ClassNotFoundException e) {
-            System.out.println("Error in client: " + e);
+            LOGGER.severe("Error in client: " + e);
         }
     }
 }

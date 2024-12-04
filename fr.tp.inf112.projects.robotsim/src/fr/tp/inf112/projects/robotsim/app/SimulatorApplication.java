@@ -67,7 +67,7 @@ public class SimulatorApplication {
 		conveyorShape.addVertex(new BasicVertex(xCoordinate, yCoordinate + height - baselineSize));
 
 		final Room chargingRoom = new Room(factory, new RectangularShape(125, 125, 50, 50), "Charging Room");
-		new Door(chargingRoom, Room.WALL.RIGHT, 10, 20, false, "Entrance");
+		new Door(chargingRoom, Room.WALL.RIGHT, 10, 20, true, "Entrance");
 		final ChargingStation chargingStation = new ChargingStation(factory, new RectangularShape(150, 145, 15, 15), "Charging Station");
 		/*
 		 * final FactoryPathFinder jgraphPahtFinder = new
@@ -84,7 +84,7 @@ public class SimulatorApplication {
 			robot.addTarget(machine1);
 			robot.addTarget(machine2);
 			robot.addTarget(new Conveyor(factory, conveyorShape, "Conveyor 1"));
-			//robot.addTarget(chargingStation);
+			robot.addTarget(chargingStation);
 			
 		}
 		

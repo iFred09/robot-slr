@@ -2,62 +2,159 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2024-12-03T22:23:48.529185Z</date>
-  <millis>1733264628529</millis>
-  <nanos>185000</nanos>
-  <sequence>482</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <date>2024-12-04T12:56:40.163151Z</date>
+  <millis>1733317000163</millis>
+  <nanos>151000</nanos>
+  <sequence>709</sequence>
+  <logger>java.awt.mixing.Component</logger>
   <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
   <thread>17</thread>
-  <message>sun.awt.TimedWindowEvent[WINDOW_LOST_FOCUS,opposite=null,oldState=0,newState=0] on frame0</message>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x888,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x860,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = true</message>
 </record>
 <record>
-  <date>2024-12-03T22:23:48.529328Z</date>
-  <millis>1733264628529</millis>
+  <date>2024-12-04T12:56:40.163284Z</date>
+  <millis>1733317000163</millis>
+  <nanos>284000</nanos>
+  <sequence>710</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = javax.swing.JLayeredPane[null.layeredPane,0,0,1512x860,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]; isLightweight=true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:40.163328Z</date>
+  <millis>1733317000163</millis>
   <nanos>328000</nanos>
-  <sequence>483</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <sequence>711</sequence>
+  <logger>java.awt.mixing.Component</logger>
   <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
   <thread>17</thread>
-  <message>Active fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x888,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x860,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], Current focused fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x888,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x860,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], losing focus fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x888,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x860,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true] opposite null</message>
+  <message>this = javax.swing.JLayeredPane[null.layeredPane,0,0,1512x860,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]; isLightweight = true</message>
 </record>
 <record>
-  <date>2024-12-03T22:23:48.529504Z</date>
-  <millis>1733264628529</millis>
-  <nanos>504000</nanos>
-  <sequence>484</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <date>2024-12-04T12:56:40.163356Z</date>
+  <millis>1733317000163</millis>
+  <nanos>356000</nanos>
+  <sequence>712</sequence>
+  <logger>java.awt.mixing.Component</logger>
   <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
   <thread>17</thread>
-  <message>java.awt.event.FocusEvent[FOCUS_LOST,temporary,opposite=null,cause=ACTIVATION] on frame0</message>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x888,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x860,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = true</message>
 </record>
 <record>
-  <date>2024-12-03T22:23:48.529611Z</date>
-  <millis>1733264628529</millis>
-  <nanos>611000</nanos>
-  <sequence>485</sequence>
-  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <date>2024-12-04T12:56:40.163387Z</date>
+  <millis>1733317000163</millis>
+  <nanos>387000</nanos>
+  <sequence>713</sequence>
+  <logger>java.awt.mixing.Container</logger>
   <level>FINE</level>
-  <class>java.awt.DefaultKeyboardFocusManager</class>
-  <method>dispatchEvent</method>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
   <thread>17</thread>
-  <message>java.awt.event.WindowEvent[WINDOW_DEACTIVATED,opposite=null,oldState=0,newState=0] on frame0</message>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,1512x860,invalid,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]; isLightweight=true</message>
 </record>
 <record>
-  <date>2024-12-03T22:23:48.529615Z</date>
-  <millis>1733264628529</millis>
-  <nanos>615000</nanos>
-  <sequence>486</sequence>
-  <logger>sun.lwawt.focus.LWWindowPeer</logger>
+  <date>2024-12-04T12:56:40.163405Z</date>
+  <millis>1733317000163</millis>
+  <nanos>405000</nanos>
+  <sequence>714</sequence>
+  <logger>java.awt.mixing.Component</logger>
   <level>FINE</level>
-  <class>sun.lwawt.LWWindowPeer</class>
-  <method>changeFocusedWindow</method>
-  <thread>15</thread>
-  <message>loosing focus window: sun.lwawt.LWWindowPeer@532c06d [target is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x888,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x860,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]</message>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,1512x860,invalid,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]; isLightweight = true</message>
 </record>
+<record>
+  <date>2024-12-04T12:56:40.163428Z</date>
+  <millis>1733317000163</millis>
+  <nanos>428000</nanos>
+  <sequence>715</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>17</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x888,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x860,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:40.163464Z</date>
+  <millis>1733317000163</millis>
+  <nanos>464000</nanos>
+  <sequence>716</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = javax.swing.JRootPane[,0,28,1512x860,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; isLightweight=true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:40.163484Z</date>
+  <millis>1733317000163</millis>
+  <nanos>484000</nanos>
+  <sequence>717</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = javax.swing.JRootPane[,0,28,1512x860,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; isLightweight = true</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:40.163500Z</date>
+  <millis>1733317000163</millis>
+  <nanos>500000</nanos>
+  <sequence>718</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>17</thread>
+  <message>this = javax.swing.JRootPane[,0,28,1512x860,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:40.163773Z</date>
+  <millis>1733317000163</millis>
+  <nanos>773000</nanos>
+  <sequence>719</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x888,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x860,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; isLightweight=false</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:40.163885Z</date>
+  <millis>1733317000163</millis>
+  <nanos>885000</nanos>
+  <sequence>720</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>17</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x888,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x860,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; isLightweight = false</message>
+</record>
+<record>
+  <date>2024-12-04T12:56:40.163930Z</date>
+  <millis>1733317000163</millis>
+  <nanos>930000</nanos>
+  <sequence>721</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>17</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,0,38,1512x888,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,28,1512x860,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = false; disposing = true</message>
+</record>
+</log>
